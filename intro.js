@@ -48,3 +48,29 @@ if(user.isloggedin==true){
     console.log(user.firstname+' ' + user.lastname);
 }
 
+let array5 = [ 'watermelon', 'pear', 10, 45, 50, 'apple', 'ananas'] ;
+for(let B of array5){
+    if(B=='string'){
+        console.log(B);
+    }
+}
+
+function MyMax(myarr){
+    var len = myarr.length;
+}
+
+//4
+function MyMax(myarr){
+    var al = myarr.length;
+    maximum = myarr[al-1];
+    while (al--){
+        if(myarr[al] > maximum){
+            maximum = myarr[al]
+        }
+    }
+            return maximum;
+};
+var myArray = [1, 5, 6, 2, 3];
+var m = MyMax(myArray);
+console.log(m)
+

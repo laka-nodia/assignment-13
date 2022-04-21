@@ -1,7 +1,31 @@
+//1. მოცემულია ობიექტი: ამოიღეთ user ცვლადის სტუდენტის სტატუსი;
+let user2 = {
+    firstname: 'giorgi',
+    lastname: 'smith',
+    age: 25,
+    studentstatus: 'active'
+}
+  console.log(user2.studentstatus);
+  
 //2. შექმენით მასივი, და დაბეჭდეთ სათითაოდ თითოეული ელემენტი; (for, while ციკლების საშუალებით)
 let flowers = ['Rose' , 'Orchid' , 'Tulips', 'Lilac', 'Sunflower'];
 for (let item of flowers){
     console.log(item);
+}
+
+let Range = [11,22,33,44,55];
+let L = 0;
+while(L<Range.length){
+    console.log(Range[L]);
+    L++;
+}
+
+//3.  შექმენით მასივი, და ამოიღეთ ყველა რიცხვი რომელიც მეტია 5ზე, for ციკლის გამოყენებით.
+let numbers1 = [5, 6, 10, 25, 3, 7, 4, 100, 28, 36, 89];
+for(let k of numbers1){
+    if(k>5){
+        console.log(k);
+    }
 }
 
 // 4 თუ უსერის ასაკი ნაკლებია 18-ზე და სტუდენტის სტატუსი აქტიურია დაიბეჭდოს ტექსტი: hello;
@@ -24,6 +48,14 @@ if (user1.age < 18 && user1.studentstatus == 'active'){
     console.log('error');
 }
 
+//5.მოცემულია მასივი: გამოიტანეთ მარტო სრტინგები;
+let array1 = [ 'watermelon', 'pear', 10, 45, 50, 'apple', 'ananas'] ;
+for(let B of array1){
+    if(typeof B=='string'){
+        console.log(B);
+    }
+}
+
 //6. მოცემული მასივიდან for ციკლის საშუალებით კონსოლში გამოიტანეთ მხოლოდ დადებითი რიცხვები
 let array = [ [2, -3, 5, 10], [25, -24, -11, 100] , [-6, -7, 10] ];
 for(let Z of array){
@@ -42,7 +74,8 @@ for(let X of elements){
     }
 }
 //დავალება ფუნქციებზე
-//1. შექმენით ფუნქცია, რომელსაც გადავცემთ n რაოდენობის მნიშვნელობას და დააბრუნოს მხოლოდ დადებითი რიცხვების ჯამი:
+//1. შექმენით ფუნქცია, რომელსაც გადავცემთ n რაოდენობის მნიშვნელობას და უნდა
+//დააბრუნოს მხოლოდ დადებითი რიცხვების ჯამი:
 function nNumber(...args){
     let sum = 0;
     for(let N of args){
@@ -66,7 +99,8 @@ function plus(...args){
 let f = plus(10, 50, 6, 7, 8, 11, 6, 3, 9);
 console.log(f);
 
-//3. ფუნქციამ უნდა დააბრუნოს სახელი და გვარი ადგილის გამოტოვებით (მაგ: 'giorgi saakadze') თუ isloggedin არის true და false თუ isloggedin ფროფერთი არის false;
+//3. ფუნქციამ უნდა დააბრუნოს სახელი და გვარი ადგილის გამოტოვებით (მაგ: 'giorgi saakadze') 
+//თუ isloggedin არის true და false თუ isloggedin ფროფერთი არის false;
 let user = {
     firstname: 'giorgi',
     lastname: 'saakadze',
@@ -82,7 +116,11 @@ function myBoolean(){
 }
 myBoolean();
 
-//4. შექმენით ფუნქცია რომელსაც გადაეცემა ერთი პარამეტრი. ეს პარამეტრი უნდა იყოს რიცხვების მასივი და ფუნქციამ უნდა დააბრუნოს ამ რიცხვებიდან მაქსიმალური:
+//4. შექმენით ფუნქცია რომელსაც გადაეცემა ერთი პარამეტრი. 
+//ეს პარამეტრი უნდა იყოს რიცხვების მასივი და ფუნქციამ 
+//უნდა დააბრუნოს ამ რიცხვებიდან მაქსიმალური:
+
+
 
 
   
