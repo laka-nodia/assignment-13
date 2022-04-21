@@ -105,21 +105,34 @@ let user = {
     firstname: 'giorgi',
     lastname: 'saakadze',
     age: 32,
-    isloggedin: false
+    isloggedin: true
 }
-function myBoolean(){
-    if(user.isloggedin==true){
-        console.log(user.firstname+' ' + user.lastname);
+function myBoolean(user){
+    if(user.isloggedin){
+        return user.firstname+' ' + user.lastname;
     }else{
-        console.log(false);
+        return false;
     }
 }
-myBoolean();
+let result = myBoolean(user)
+console.log(result);
 
 //4. შექმენით ფუნქცია რომელსაც გადაეცემა ერთი პარამეტრი. 
 //ეს პარამეტრი უნდა იყოს რიცხვების მასივი და ფუნქციამ 
 //უნდა დააბრუნოს ამ რიცხვებიდან მაქსიმალური:
 
+function MyMax(myarr){
+    let maxValue=0;
+    for(let M of myarr){
+        if (M>maxValue){
+            maxValue=M;
+        }
+    }
+    return maxValue;
+}
+let myarr= [1, 5, 6, 2, 3]
+let answer =  MyMax(myarr);
+console.log(answer);
 
 
 
